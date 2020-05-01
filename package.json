@@ -39,6 +39,12 @@
     "object-assign": "^4.0.0",
     "repeat-string": "^1.5.4",
     "semver": "^5.3.0",
-    "socketcluster": "^6.7.1"
-  }
+    "socketcluster": "^6.7.1",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
